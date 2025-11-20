@@ -291,7 +291,7 @@ end
 function M.complete(findstart, base)
   local completion = ctx.opts.completion
   if findstart == 1 then
-    return #ctx.win:text():gsub("%S+$", "")
+    return 0
   end
   if not completion then
     return {}
